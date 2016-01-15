@@ -6,23 +6,32 @@ describe('Selectors', function() {
 
   it('#h1Selector should select all h1\'s', function() {
     expect(h1Selector().length).toBe(1);
+    expect(h1Selector()[0].innerHTML).toEqual("Header 1");
+
   });
 
   it('#liInOlSelector should select all li elements nested in ol\'s', function() {
     expect(liInOlSelector().length).toBe(3);
+    expect(liInOlSelector()[0].innerHTML).toEqual("Crayon");
+    expect(liInOlSelector()[1].innerHTML).toEqual("Pencil");
+    expect(liInOlSelector()[2].innerHTML).toEqual("Stapler");
   });
 
   it('#linkSelector should select all links that are inside of the element with an id of box4 and a class of box5.', function() {
     expect(linkSelector().length).toBe(1);
+    expect(linkSelector()[0].innerHTML).toEqual("This is a link nested inside a div");
   });
 
   it('#imageSelector should an image that has the alt text equal to "cat sleeping"', function() {
     expect(imageSelector().length).toBe(1);
+    expect(imageSelector().attr("src")).toEqual("images/cat.jpg")
   });
 
   it('#checkboxInputSelector should select all checkbox inputs and wrap them with a span that has the class of pinky using the wrap method', function() {
-    checkboxInputSelector();
-    expect($('form span.pinky').length).toBe(2);
+    
+    expect(checkboxInputSelector().length).toBe(2);
+    expect(checkboxInputSelector()[0].value).toEqual("Bike");
+    expect(checkboxInputSelector()[1].value).toEqual("Car");
   });
 
 });
