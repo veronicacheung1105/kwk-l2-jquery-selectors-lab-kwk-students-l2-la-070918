@@ -27,7 +27,7 @@ describe('Selectors', function() {
     expect(imageSelector().attr("src")).toEqual("images/cat.jpg")
   });
 
-  it('#checkboxInputSelector should select all checkbox inputs and wrap them with a span that has the class of pinky using the wrap method', function() {
+  it('#checkboxInputSelector should select all checkbox inputs', function() {
     
     expect(checkboxInputSelector().length).toBe(2);
     expect(checkboxInputSelector()[0].value).toEqual("Bike");
