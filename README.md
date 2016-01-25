@@ -12,10 +12,10 @@ In js/selectors.js write the code necessary to select 5 different elements from 
 ## Instructions
 
 1. Write a function, `h1Selector`,  that selects all `<h1>` elements and returns them using an element selector.
-2. Write a function, `liSelector`,  that selects and returns all `<li>` inside of `<ol>` using a descendant selector.
+2. Write a function, `liInOlSelector`,  that selects and returns all `<li>` inside of `<ol>` using a descendant selector.
 3. Write a function, `linkSelector`,  that selects and returns the `<a>` that is inside of the element that has both an id of box4 and a class of box5.
 4. Write a function, `catSelector`,  that selects and returns the image of the cat that has the alt text equal to "cat sleeping".
-5. Write a function, `checkboxSelector`,  that selects and returns all the checkbox inputs
+5. Write a function, `checkboxInputSelector`,  that selects and returns all the checkbox inputs
 
 
 <a href='https://learn.co/lessons/jQuery-selector-basics' data-visibility='hidden'>View this lesson on Learn.co</a>ery-selector-basics' data-visibility='hidden'>View this lesson on Learn.co</a>
